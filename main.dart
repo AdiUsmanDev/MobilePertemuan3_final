@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         title: 'Latihan 1',
         theme: ThemeData(
           useMaterial3: true,
-          colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 34, 34, 255)),
+          colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 255, 255, 255)),
         ),
         home: MyHomePage(),
       ),
@@ -73,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             SafeArea(
               child: NavigationRail(
-                extended: constraints.maxWidth >= 600,  // ← Here.
+                extended: constraints.maxWidth >= 600, 
                 destinations: [
                   NavigationRailDestination(
                     icon: Icon(Icons.home),
@@ -105,8 +105,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-
-// ...
 
 
 class GeneratorPage extends StatelessWidget {
@@ -173,21 +171,15 @@ class BigCard extends StatelessWidget {
       color: theme.colorScheme.primary,    
       child: Padding(
         padding: const EdgeInsets.all(20),
-        child: Text('NAMA\nNIM\nANGKATAN',
-         style: TextStyle(
-    color: Colors.white,  
-    fontSize: 20,                 
-    fontWeight: FontWeight.bold,  
-    fontFamily: 'Roboto',        
-  ),
-   textAlign: TextAlign.center,
-  
-  ),
+        child: Text('NAMA\nNIM\nANGKATAN'),
         
       ),
     );
-    }
+  }
 }
 
+//kombinasi kan lagi kode sesuai dengan apa yang ingin di buat seperti penyesuaian warna dan menyesuaian layout 
+
+//adi usman
 
 
